@@ -22,9 +22,11 @@
 	<!-- <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" 
 		/> -->
 
-	<Resource name="jdbc/webshop" auth="Container" type="javax.sql.DataSource"
-		maxActive="100" maxIdle="30" maxWait="10000" username="root"
-		password="lambofgod" driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/webshop" />
+	<!-- Tomcat 7' s JNDI Datasource codes.
+	TR - Tomcat 7 nin JNDI kodları ve bu dosya tomcat altında yer alır.-->
+	<Resource name="jdbc/YOUR_DATABASE_NAME" auth="Container" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30" maxWait="10000" username="YOUR_DATABASE_UERNAME"
+		password="YOUR_DATABASE_PASSWORD" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME" />
 
 </Context>
