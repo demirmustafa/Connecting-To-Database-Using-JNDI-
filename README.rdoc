@@ -1,3 +1,5 @@
 Connecting to databse using Tomcat's JNDI data source.
 
 context.xml is the Tomcat's file.
+
+And there are some JNDI codes in the deployment descriptor(/WebContent/Web-INF/web.xml).
