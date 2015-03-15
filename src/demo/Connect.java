@@ -51,7 +51,7 @@ public class Connect extends HttpServlet {
 
 		try {
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/webshop", "root", "lambofgod");
+					"jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME", "YOUR_DATABASE_USER_NAME", "YOUR_DATABASE_PASSWORD");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			out.println("Can't connect to database <br/>");
