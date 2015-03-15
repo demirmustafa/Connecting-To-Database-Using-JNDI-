@@ -1,0 +1,3 @@
+Connecting to databse using Tomcat's JNDI data source.
+
+context.xml is the Tomcat's file.
